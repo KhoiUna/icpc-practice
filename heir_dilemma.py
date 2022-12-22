@@ -17,8 +17,14 @@ counter = 0
 for number in array:
     divisible = False
 
+    digit_arr = []
+
     for digit in str(number):   
-        if digit in str(number).split(""):
+        digit_arr.append(digit)
+
+
+    for digit in str(number):   
+        if digit_arr.count(digit) > 1:
             divisible = False
             break   
         
