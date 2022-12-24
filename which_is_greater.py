@@ -6,6 +6,6 @@ first = int(user_input.split(" ")[0])
 second = int(user_input.split(" ")[1])
 
 if first > second:
-    print(1)
+  print(1)
 else:
-    print(0)
+  print(0)
