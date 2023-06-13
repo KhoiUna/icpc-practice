@@ -6,9 +6,9 @@ https://open.kattis.com/problems/nastyhacks
 for _ in range(int(input())):
     r,e,c = map(int, input().split())
     
-    if c < r:
+    if e - r == c:
         print('does not matter')
-    elif e > r and e > c:
+    elif e - r > c:
         print('advertise')
-    elif c > e:
+    else:
         print('do not advertise')
