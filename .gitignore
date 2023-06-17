@@ -1,2 +1,4 @@
 /venv
 input.txt
+.vscode/
+__pycache__
