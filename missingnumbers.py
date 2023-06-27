@@ -5,13 +5,12 @@ https://open.kattis.com/problems/missingnumbers
 
 seq = [int(input()) for _ in range(int(input()))]
 
-cache = []
-for n in seq:
-    if n-1 not in seq and n-1 not in cache and n-1 > 0:
-        cache.append(n-1)
-        print(n-1)
-    if n+1 not in seq and n+1 not in cache and n+1 < seq[-1]:
-        cache.append(n+1)
-        print(n+1)
+missed = False
 
-if len(cache) == 0: print('good job')
+for n in range(1, seq[-1] + 1):
+    if n not in seq: 
+        print(n)
+        missed = True
+
+
+if not missed: print('good job')
