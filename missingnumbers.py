@@ -7,7 +7,7 @@ seq = [int(input()) for _ in range(int(input()))]
 
 cache = []
 for n in seq:
-    if n-1 not in seq and n-1 not in cache and n-1 > seq[0]:
+    if n-1 not in seq and n-1 not in cache and n-1 > 0:
         cache.append(n-1)
         print(n-1)
     if n+1 not in seq and n+1 not in cache and n+1 < seq[-1]:
